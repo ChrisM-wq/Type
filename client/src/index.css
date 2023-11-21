@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.letter {
+    position: absolute;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    padding: 6px 12px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #282828, #202020);
+    box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.15), inset 0 -8px 8px rgba(0, 0, 0, 0.25), 0 2px rgba(0, 0, 0, 0.75), 10px 20px 25px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+.letter::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    bottom: 14px;
+    right: 12px;
+    background: linear-gradient(90deg, #232323, #4a4a4a);
+    border-radius: 10px;
+    box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.25), 10px 5px 10px rgba(0, 0, 0, 0.15);
+    border-left: 1px solid #0004;
+    border-bottom: 1px solid #0004;
+    border-top: 1px solid #0009;
+}
+
+.letter i {
+    position: relative;
+    color: #fff;
+    font-style: normal;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.letterBlue {
+    transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+    position: absolute;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    padding: 6px 12px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #182CD4, #111e99);
+    box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.5), inset 0 -8px 8px rgba(0, 0, 0, 0.35), 0 2px rgba(0, 0, 0, 0.25), 10px 20px 25px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+.letterBlue::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    bottom: 14px;
+    right: 12px;
+    background: linear-gradient(90deg, #2332b4, rgb(49, 63, 192));
+    border-radius: 10px;
+    box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.25), 10px 5px 10px rgba(0, 0, 0, 0.35);
+    border-left: 1px solid rgb(37, 49, 158);
+    border-bottom: 1px solid #1e33eb;
+    border-top: 1px solid #0f1c91;
+}
+
+.letterBlue i {
+    position: relative;
+    color: #C4FA6F;
+    font-style: normal;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.letterGreen {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    padding: 6px 12px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #C4FA6F, #7fa148);
+    box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.5), inset 0 -8px 8px rgba(0, 0, 0, 0.35), 0 2px rgba(0, 0, 0, 0.25), 10px 20px 25px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+.letterGreen::before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    bottom: 14px;
+    right: 12px;
+    background: linear-gradient(90deg, #98bd5c, #cdff7c);
+    border-radius: 10px;
+    box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.25), 10px 5px 10px rgba(0, 0, 0, 0.35);
+    border-left: 1px solid #9bb86d;
+    border-bottom: 1px solid #a2c46c;
+    border-top: 1px solid #aed372;
+}
+
+.letterGreen i {
+    position: relative;
+    color: #182CD4;
+    font-style: normal;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.typewriter {
+    color: #C4FA6F;
+    font-weight: 600;
+}
+
+.blur {
+    filter: blur(5px);
+  }
+
+
+
+
+.progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #eee;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    border-radius: 5px;
+    background: linear-gradient(to right, #4caf50, #2196f3);
+    transition: width 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.progress-text {
+    margin: 0 10px;
+    color: #fff;
+}
