@@ -16,7 +16,7 @@ dotenv.config({ path: path.resolve(__dirname, '.env') });
 const clientURL = process.env.CLIENT_URL;
 
 app.use(cors({
-    origin: clientURL, // Adjust the origin accordingly
+    origin: '*', // Adjust the origin accordingly
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept'],
 }));
@@ -24,7 +24,7 @@ app.use(cors({
 const server = app.listen(3001);
 const io = socketio(server, {
     cors: {
-        origin: clientURL, // Adjust the origin accordingly
+        origin: '*', // Adjust the origin accordingly
         methods: ['GET', 'POST'],
         allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept'],
         credentials: true,
