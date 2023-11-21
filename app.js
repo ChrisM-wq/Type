@@ -32,8 +32,6 @@ const io = socketio(server, {
 });
 
 
-
-
 const mongoURI = process.env.MONGO_URI;
 
 mongoose.connect(mongoURI);
