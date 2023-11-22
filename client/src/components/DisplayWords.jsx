@@ -1,22 +1,25 @@
 
 
 const typedCorrentlyStyle = {
-    "backgroundColor": "#34eb77"
+    "backgroundColor": "#C4FA6F",
+    "color": '#3A3F47',
+    'fontWeight': 600
 }
 
 const getTypedWords = (words, player) => {
     console.log(words)
     let typedWords = words.slice(0, player?.currentWordIndex);
     typedWords = typedWords.join(" ");
-    return <span style={typedCorrentlyStyle}>{typedWords}</span>
+    return <span style={typedCorrentlyStyle} className="py-1 rounded-lg">{typedWords}</span>
 }
 
 const currentStyle = {
-    "textDecoration" : "underline"
+    "textDecoration" : "underline",
+    "textDecorationColor": "#C4FA6F"
 }
 
 const getCurrentWord = ( words, player) => {
-    return <span style={currentStyle}> {words[player?.currentWordIndex]}</span>
+    return <span style={currentStyle}>{words[player?.currentWordIndex]}</span>
 };
 
 
@@ -28,7 +31,7 @@ const getWordsToBeTyped = ( words, player ) => {
 
 const DisplayWords = ({ words, player }) => {
     return (
-        <div className="">
+        <div className="text-light text-lg ">
             { getTypedWords( words, player ) }
             { getCurrentWord( words, player ) }
             { getWordsToBeTyped( words, player ) }

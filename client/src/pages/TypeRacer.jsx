@@ -35,7 +35,7 @@ const TypeRacer = () => {
 
 
     return (
-        <div>
+        <div className="bg-[#303030] min-h-screen flex flex-col items-center p-20 gap-10">
             <DisplayWords words={words} player={player} />
             <ProgressBar players={players} player={player} wordsLength={words.length}/>
             <Form isOpen={isOpen} isOver={isOver} gameID={_id} />

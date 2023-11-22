@@ -32,11 +32,11 @@ const Form = ({ isOpen, isOver, gameID }) => {
         <div>
             <div></div>
             <div>
-                <form>
+                
                     <div>
                         <input type="text" readOnly={isOpen || isOver} onChange={handleUserInput} value={userInput} ref={textInput}/>
                     </div>
-                </form>
+               
             </div>
             <div></div>
         </div>
